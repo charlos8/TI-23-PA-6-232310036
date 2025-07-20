@@ -1,0 +1,83 @@
+// Bootstrap
+@import "bootstrap/scss/bootstrap";
+
+// Your custom styles here
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+
+.navbar-custom {
+    background-color: #6a0dad;
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: #ffffff;
+}
+.navbar-custom .nav-link:hover {
+    color: #d1b3ff;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #6a0dad;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 56px;
+    color: #ffffff;
+}
+.sidebar .nav-link {
+    color: #ffffff;
+    padding: 15px 20px;
+    display: block;
+}
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+    background-color: #8a2be2;
+    color: #ffffff;
+}
+.sidebar .nav-link i {
+    margin-right: 10px;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.card-custom {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card-header-custom {
+    background-color: #6a0dad;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.btn-purple {
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+}
+.btn-purple:hover {
+    background-color: #8a2be2;
+    color: white;
+}
+
+/* Styles for QR Code page */
+#qrcode-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px; /* Memberikan tinggi minimum agar QR code tidak terlalu kecil */
+}
+#qrcode-container canvas,
+#qrcode-container img {
+    border: 5px solid #6a0dad; /* Border ungu di sekitar QR code */
+    border-radius: 5px;
+}
